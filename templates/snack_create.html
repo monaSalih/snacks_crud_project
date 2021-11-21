@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>Create Snack</h2>
+{% block title %}Create Snack {% endblock %}
 <form action="" method="POST">
     {% csrf_token %}
     {{form.as_p}}

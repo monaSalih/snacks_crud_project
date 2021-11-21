@@ -1,8 +1,9 @@
-{% extend 'base.html' %}
+{% extends 'base.html' %}
+{% block title %} Delete snack{% endblock %} 
 {% block content %}
 <form action="" method="POST">
     {% csrf_token %}
     <p>delete this tilte "{{ snack.title }}"</p>
     <input type="submit"  value="delete">
 </form>
-{% endblock content %}
+{% endblock %}
